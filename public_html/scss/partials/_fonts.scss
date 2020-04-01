@@ -1,2 +1,17 @@
+/*Bodoni font*/
+@font-face {
+    font-family: 'BodoniSvtyTwoITCTT-Book';
+    src: 
+        url('fonts/BodoniSvtyTwoITCTT/BodoniSvtyTwoITCTT-Book.eot?#iefix') format('embedded-opentype'),  
+        url('fonts/BodoniSvtyTwoITCTT/BodoniSvtyTwoITCTT-Book.woff') format('woff'), 
+        url('fonts/BodoniSvtyTwoITCTT/BodoniSvtyTwoITCTT-Book.ttf')  format('truetype'), 
+        url('fonts/BodoniSvtyTwoITCTT/BodoniSvtyTwoITCTT-Book.svg#BodoniSvtyTwoITCTT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Lato font*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap&subset=latin-ext');
 
-
+//Fonts - vriables
+$bodoni:'BodoniSvtyTwoITCTT-Book';
+$lato: 'Lato', sans-serif;
