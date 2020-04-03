@@ -68,9 +68,9 @@ header{
             margin-top: 0;
             align-items: flex-end;
             .nav-item{
+                margin-left: 3rem;
                 .nav-link{
                     padding: 2px 0;
-                    margin-left: 3rem;
                     &:hover,&:active{
                         background-color: transparent;
                         border-bottom: 1px solid $navlink-hover-border-bottom;  
@@ -90,9 +90,7 @@ header{
         .navbar-nav{
             align-items: flex-end;
             .nav-item{
-                .nav-link{
-                    margin-left: 6rem;
-                }//navbar-link
+                margin-left: 6rem;
             }//nav-item
         }//navbar-nav
     }
@@ -101,5 +99,5 @@ header{
 //XL
 @media(min-width: 1200px){
 
-    
+
 }
