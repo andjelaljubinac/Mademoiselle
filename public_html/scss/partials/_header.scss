@@ -1,0 +1,105 @@
+//variables
+$toggler-bg: darken($primary, 20%);
+$navlink-hover-border-bottom: $primary;
+$navlink-hover-color: $primary;
+
+
+
+//header style
+header{
+    .navbar {
+        align-items: flex-end;
+        .navbar-brand{
+            max-width: 200px;
+        }//navbar-brand
+
+        .navbar-toggler{
+            border: none;
+            span{
+                background-color: $toggler-bg;
+                display: block;
+                height: 2px;
+                width: 30px;
+                margin-bottom: 5px;
+                &:last-of-type{
+                    margin-bottom: 2px;
+                }//last of span
+            }//span
+        }//navbar-togler
+    }//navbar
+
+    .navbar-nav{
+        margin-top: 1rem;
+        .nav-item{
+            .nav-link{
+                display: block;
+                text-align: center;
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                letter-spacing: 1px;
+                padding: 10px 0;
+                border-bottom: 1px solid transparent;
+                &:hover,&:active{
+                    background-color: $navlink-hover-color; 
+                }
+            }//navbar-link
+        }//nav-item
+    }//navbar-nav
+}//header
+
+
+
+
+//Breakpoints
+
+//XM
+@media(min-width: 450px){
+
+
+}
+
+//MD
+@media(min-width: 768px){
+
+    //header style
+    header{
+        .navbar-nav{
+
+            margin-top: 0;
+            align-items: flex-end;
+            .nav-item{
+                .nav-link{
+                    padding: 2px 0;
+                    margin-left: 3rem;
+                    &:hover,&:active{
+                        background-color: transparent;
+                        border-bottom: 1px solid $navlink-hover-border-bottom;  
+                    }
+                }//navbar-link
+            }//nav-item
+        }//navbar-nav
+    }//header
+}
+
+
+//LG
+@media(min-width: 992px){
+
+    //header style
+    header{
+        .navbar-nav{
+            align-items: flex-end;
+            .nav-item{
+                .nav-link{
+                    margin-left: 6rem;
+                }//navbar-link
+            }//nav-item
+        }//navbar-nav
+    }
+}
+
+//XL
+@media(min-width: 1200px){
+
+    
+}
