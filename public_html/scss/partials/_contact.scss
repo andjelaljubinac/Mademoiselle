@@ -27,6 +27,9 @@ $contact-title-font-family: $bodoni;
                         position: absolute;
                         bottom: 0;
                         left: 1%;
+                        font-size: 1.4rem;
+                        letter-spacing: 0.5px;
+                        line-height: 1.7rem;
                     }
                     .form-control {
                         font-weight: 300;
@@ -57,6 +60,17 @@ $contact-title-font-family: $bodoni;
         }//contact map         
     }//contact wrapper
 }//contact
+
+.info-section{
+    padding: 40px 0;
+
+    p{
+        font-size: 2.4rem;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 2.5rem;
+    }
+}
 
 
 //Breakpoints
@@ -92,7 +106,9 @@ $contact-title-font-family: $bodoni;
         padding: 75px 0;
 
     }
-
+    .info-section{
+        padding: 63px 0 60px;
+    }
 }
 
 

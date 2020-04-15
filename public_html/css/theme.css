@@ -14079,6 +14079,9 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
   position: absolute;
   bottom: 0;
   left: 1%;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  line-height: 1.7rem;
 }
 
 .contact .contact-wrapper .form-wrapper .contact-form .form-group .form-control {
@@ -14108,6 +14111,17 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
   height: 350px;
 }
 
+.info-section {
+  padding: 40px 0;
+}
+
+.info-section p {
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 2.5rem;
+}
+
 @media (min-width: 450px) {
   .contact .contact-wrapper {
     padding-bottom: 500px;
@@ -14126,6 +14140,9 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
 @media (min-width: 768px) {
   .contact {
     padding: 75px 0;
+  }
+  .info-section {
+    padding: 63px 0 60px;
   }
 }
 
