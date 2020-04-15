@@ -13785,6 +13785,18 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
   font-weight: 400;
 }
 
+.blog-single-header .blog-single-header-photo {
+  overflow: hidden;
+}
+
+.blog-single-header .blog-single-header-photo img {
+  transition: .3s linear;
+}
+
+.blog-single-header .blog-single-header-photo:hover img {
+  transform: scale(1.1);
+}
+
 .blog-single-header .blog-single-header-content {
   font-size: 2rem;
   font-weight: 300;
@@ -13868,7 +13880,14 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
 }
 
 .services-single {
-  padding: 100px 0;
+  padding: 50px 0;
+}
+
+.services-single .services-single-title {
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0;
+  line-height: 5rem;
 }
 
 @media (min-width: 450px) {
@@ -13892,7 +13911,10 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
 
 @media (min-width: 768px) {
   .services-single {
-    padding: 130px 0;
+    padding: 90px 0;
+  }
+  .services-single .services-single-title {
+    font-size: 4.4rem;
   }
 }
 
@@ -13906,15 +13928,15 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
   .services-section .services-item .services-item-content {
     padding: 40px 90px;
   }
-  .services-single {
-    padding: 170px 0 110px;
-  }
 }
 
 @media (min-width: 1200px) {
   .services-section .services-item .services-item-content {
     padding-top: 143px;
     padding-left: 95px;
+  }
+  .services-single {
+    padding: 170px 0 110px;
   }
 }
 
@@ -14024,15 +14046,14 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
 
 .about-us .search-group img {
   position: absolute;
-  max-width: 6%;
+  height: 16px;
+  width: 16px;
   right: 6%;
   bottom: 29%;
 }
 
 @media (min-width: 576px) {
   .about-us .search-group img {
-    position: absolute;
-    max-width: 9%;
     right: 6%;
     bottom: 33%;
   }
@@ -14063,12 +14084,11 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
 }
 
 .contact .contact-wrapper .form-wrapper h2 {
-  width: 95%;
   font-family: "BodoniSvtyTwoITCTT-Book";
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   letter-spacing: 5px;
-  line-height: 4.5rem;
+  line-height: 3.5rem;
 }
 
 .contact .contact-wrapper .form-wrapper .contact-form {
@@ -14094,7 +14114,7 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
   font-size: 1.6rem;
   border: none;
   border-radius: 0;
-  color: #F5F5F5;
+  color: #000;
   font-family: "Lato", sans-serif;
 }
 
@@ -14153,9 +14173,17 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
   .contact .contact-wrapper {
     padding-bottom: 0;
   }
+  .contact .contact-wrapper .form-wrapper h2 {
+    width: 95%;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    line-height: 4.5rem;
+  }
   .contact .contact-wrapper .contact-map {
     right: 0;
     bottom: 0;
+    left: auto;
   }
   .contact .contact-wrapper .contact-map iframe {
     width: 450px;
@@ -14180,6 +14208,17 @@ header .navbar-nav .nav-item .nav-link:hover, header .navbar-nav .nav-item .nav-
     width: 599px;
     height: 551px;
   }
+}
+
+.error-link {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  line-height: 1.7rem;
+}
+
+.error-link.btn-outline-light:hover {
+  color: #fff;
+  background-color: #dbb7b7;
 }
 
 footer .social .social-icon {

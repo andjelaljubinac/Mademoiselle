@@ -10,11 +10,11 @@ $about-us-title-font-family: $lato;
         letter-spacing: 0;
         line-height: 5rem;
         max-width: 300px;
-    }
+    }//.about-us-item-title
 
     .about-us-item-photo{
         margin-bottom: 3rem;
-    }
+    }//.about-us-item-photo
     .search-group{
         position: relative;
         input{
@@ -25,19 +25,19 @@ $about-us-title-font-family: $lato;
             font-style: oblique;
             line-height: 2rem;
             width: 100%;
-        }
+        }//input
         img{
             position: absolute;
-            max-width: 6%;
+            height: 16px;
+            width: 16px;
             right: 6%;
             bottom: 29%;
-        }
-    }
-}
+        }//img
+    }//search group
+}//about us
 
 
 //Breakpoints
-
 //XM
 @media(min-width: 450px){
 
@@ -50,13 +50,11 @@ $about-us-title-font-family: $lato;
 
         .search-group{
             img{
-                position: absolute;
-                max-width: 9%;
                 right: 6%;
                 bottom: 33%;
             }  
-        }
-    }
+        }//search group
+    }//about us
 }
 
 
@@ -68,8 +66,8 @@ $about-us-title-font-family: $lato;
 
         .about-us-item-photo{
             margin-bottom: 5rem;
-        }
-    }
+        }//.about-us-item-photo
+    }//about us
 }
 
 
@@ -80,19 +78,12 @@ $about-us-title-font-family: $lato;
 
         .about-us-item-photo{
             margin-bottom: 6.6rem;
-        }
-    }
-}
+        }//.about-us-item-photo
 
-
-//XL
-@media(min-width: 1200px){
-
-
+    }//.about-us
 }
 
 //XXL
 @media(min-width: 1500px){
-
 
 }

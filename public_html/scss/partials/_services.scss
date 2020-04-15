@@ -1,7 +1,7 @@
 //variables
 $services-odd-item-bg: $secondary;
 $services-even-item-bg: $primary;
-
+$services-single-title-font-family: $lato;
 
 
 
@@ -33,7 +33,14 @@ $services-even-item-bg: $primary;
 
 //services-single.html
 .services-single{
-    padding: 100px 0;
+    padding: 50px 0;
+
+    .services-single-title{
+        font-family: $services-single-title-font-family;
+        font-size: 3rem;
+        letter-spacing: 0;
+        line-height: 5rem;
+    }
 }
 
 
@@ -79,7 +86,11 @@ $services-even-item-bg: $primary;
 
     //services-single.html
     .services-single{
-        padding: 130px 0;
+        padding: 90px 0;
+
+        .services-single-title{
+            font-size: 4.4rem;
+        }
     }
 }
 
@@ -100,10 +111,6 @@ $services-even-item-bg: $primary;
         }//services item
     }//services section
 
-    //services-single.html
-    .services-single{
-        padding: 170px 0 110px;
-    }
 }
 
 
@@ -118,6 +125,10 @@ $services-even-item-bg: $primary;
             }//services content
         }//services item
     }//services section
+
+    .services-single{
+        padding: 170px 0 110px;
+    }
 }
 
 //XXL

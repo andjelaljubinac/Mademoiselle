@@ -1,0 +1,11 @@
+
+.error-link{
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    line-height: 1.7rem;
+
+    &.btn-outline-light:hover {
+        color: #fff;
+        background-color: darken($primary, 10%);
+    }
+}

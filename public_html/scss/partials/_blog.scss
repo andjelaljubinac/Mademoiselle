@@ -101,6 +101,21 @@ $blog-category-font-family: $bodoni;
         line-height: 5rem;
         font-weight: 400;
     }//.blog-single-header-title
+
+    .blog-single-header-photo{
+        overflow: hidden;
+
+        img{
+            transition: .3s linear;     
+        }//img
+
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }//img
+        }//hover
+    }//.blog-single-header-photo
+
     .blog-single-header-content{
         font-size: 2rem;
         font-weight: 300;
