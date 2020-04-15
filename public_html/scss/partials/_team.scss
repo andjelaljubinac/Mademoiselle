@@ -1,0 +1,124 @@
+//variables
+$team-wrapper-border-color: $primary;
+$team-name-font-family: $lato;
+$dots-bg: $primary;
+
+
+//index.html - team section style
+.team-section{
+    padding: 20px 0;
+    .team-slider {
+        border: 1px solid $team-wrapper-border-color;
+        .team-item-info-name{
+            display: block;
+            font-size: 1.8rem;
+            letter-spacing: 0;
+            font-weight: 400;
+            font-family: $team-name-font-family;
+            line-height: 27px;
+        }//team-item-info-name
+
+
+        .owl-dots{
+            position: absolute;
+            right: 42%;
+            bottom: 0%;
+
+            .owl-dot.active{
+                span{
+                    background-color: $dots-bg;
+                }//span
+            }//owl dot.active
+            .owl-dot{
+                &:active, &:hover{
+                    span{
+                        background-color: $dots-bg;
+                    }//span
+                }
+                span{
+                    width: 8px;
+                    height: 8px;
+                    background: rgba($dots-bg, 0.34);
+                }//span
+            }//owl dot
+        }//owl-dots
+    }//team-slider
+}//team section
+
+
+
+
+//Breakpoints
+
+//XM
+@media(min-width: 450px){
+
+
+}
+
+//SM
+@media(min-width: 576px){
+
+
+}
+
+
+//MD
+@media(min-width: 768px){
+    .team-section{
+        padding: 30px 0;
+        .team-slider{
+            .team-item-info-name{
+                font-size: 2rem;
+            }//team-item-info-name
+
+            .owl-dots{
+                position: absolute;
+                right: 39.5%;
+                bottom: 10.5%;
+            }//owl dots
+        }//team slider
+    }//team section
+}
+
+
+//LG
+@media(min-width: 992px){
+
+    .team-section{
+        padding: 55px 0 67px;
+
+        .team-slider{
+            .team-item-info-name{
+                font-size: 2.5rem;
+            }//team-item-info-name
+            .owl-dots{
+                right: 46%;
+                bottom: 1%;
+            }//owl dots
+        }//team slider
+    }//team section
+}
+
+
+//XL
+@media(min-width: 1200px){
+    .team-section{
+
+        .team-slider{
+            .team-item-info-name{
+                font-size: 3rem;
+            }//team-item-info-name
+            .owl-dots{
+                right: 37%;
+                bottom: 8%;
+            }//owl dots
+        }//team slider
+    }//team section
+
+}
+
+//XXL
+@media(min-width: 1500px){
+
+}

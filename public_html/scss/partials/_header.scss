@@ -39,9 +39,9 @@ header{
                 letter-spacing: 1px;
                 padding: 10px 0;
                 border-bottom: 1px solid transparent;
-                &:hover,&:active{
+                &:hover,&.active{
                     background-color: $navlink-hover-color; 
-                }
+                }//hover and active of navbar link
             }//navbar-link
         }//nav-item
     }//navbar-nav
@@ -64,17 +64,16 @@ header{
     //header style
     header{
         .navbar-nav{
-
             margin-top: 0;
             align-items: flex-end;
             .nav-item{
                 margin-left: 3rem;
                 .nav-link{
                     padding: 2px 0;
-                    &:hover,&:active{
+                    &:hover,&.active{
                         background-color: transparent;
                         border-bottom: 1px solid $navlink-hover-border-bottom;  
-                    }
+                    }//hover navbar link
                 }//navbar-link
             }//nav-item
         }//navbar-nav
@@ -93,7 +92,7 @@ header{
                 margin-left: 6rem;
             }//nav-item
         }//navbar-nav
-    }
+    }//header
 }
 
 //XL

@@ -1,0 +1,72 @@
+//variables
+$footer-icons-bg-color: $primary;
+
+
+
+//index.html - footer section style
+footer{
+    .social{
+        .social-icon {
+            color: $footer-icons-bg-color;
+            font-size: 2.1rem;
+            margin-left: 3.1rem;
+            transition: .3s linear;
+
+            &:first-of-type{
+                margin-left: 0;
+            }
+            &:hover{
+                transform: translateY(-10px);
+            }
+        }
+    }
+    .copyright{
+        font-size: 1.2rem;
+        letter-spacing: -0.17px;
+        line-height: 4.1rem;
+    }
+}
+
+
+
+
+
+
+//Breakpoints
+
+//XM
+@media(min-width: 450px){
+
+
+}
+
+//SM
+@media(min-width: 576px){
+
+
+}
+
+
+//MD
+@media(min-width: 768px){
+
+}
+
+
+//LG
+@media(min-width: 992px){
+
+
+}
+
+
+//XL
+@media(min-width: 1200px){
+
+
+}
+
+//XXL
+@media(min-width: 1500px){
+
+}

@@ -1,0 +1,98 @@
+//variables
+$about-us-title-font-family: $lato;
+
+
+.about-us{
+    padding: 70px 0;
+    .about-us-item-title{
+        font-family: $about-us-title-font-family;
+        font-size: 4.4rem;
+        letter-spacing: 0;
+        line-height: 5rem;
+        max-width: 300px;
+    }
+
+    .about-us-item-photo{
+        margin-bottom: 3rem;
+    }
+    .search-group{
+        position: relative;
+        input{
+            display: block;
+            border: 1px solid #1e1e1e;
+            padding: 20px 22px 20px 25px;
+            font-size: 1.6rem;
+            font-style: oblique;
+            line-height: 2rem;
+            width: 100%;
+        }
+        img{
+            position: absolute;
+            max-width: 6%;
+            right: 6%;
+            bottom: 29%;
+        }
+    }
+}
+
+
+//Breakpoints
+
+//XM
+@media(min-width: 450px){
+
+
+}
+
+//SM
+@media(min-width: 576px){
+    .about-us{
+
+        .search-group{
+            img{
+                position: absolute;
+                max-width: 9%;
+                right: 6%;
+                bottom: 33%;
+            }  
+        }
+    }
+}
+
+
+
+//MD
+@media(min-width: 768px){
+
+    .about-us{
+
+        .about-us-item-photo{
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+
+//LG
+@media(min-width: 992px){
+    .about-us{
+        padding: 91px 0 78px;
+
+        .about-us-item-photo{
+            margin-bottom: 6.6rem;
+        }
+    }
+}
+
+
+//XL
+@media(min-width: 1200px){
+
+
+}
+
+//XXL
+@media(min-width: 1500px){
+
+
+}

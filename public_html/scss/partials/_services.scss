@@ -1,0 +1,126 @@
+//variables
+$services-odd-item-bg: $secondary;
+$services-even-item-bg: $primary;
+
+
+
+
+//index.html and services.html
+.services-section{
+    padding: 20px 0;
+
+    .services-item{
+        .services-item-content{
+            padding: 80px 60px;
+            text-align: center;
+        }//services-item
+        &:nth-of-type(odd){
+
+            div.col-10{
+                .services-item-content{
+                    background-color: $services-odd-item-bg;
+                }//services-item-content
+            }//div.col-10 
+        }//odd service content
+        &:nth-of-type(even){
+            .services-item-content{
+                background-color: $services-even-item-bg;
+            }//services-item-content
+        }//even services item
+    }//services item
+}//services section
+
+
+//services-single.html
+.services-single{
+    padding: 100px 0;
+}
+
+
+//Breakpoints
+
+//XM
+@media(min-width: 450px){
+
+    .services-section{
+        .services-item{
+            .services-item-content{
+                padding: 130px 80px 130px 70px;
+            }//services-item
+        }//services item 
+    }
+}
+
+//SM
+@media(min-width: 576px){
+
+    .services-section{
+        padding: 10px 0 20px;
+        .services-item{
+            &:nth-of-type(odd){
+
+                div.col-10{
+                    &:nth-of-type(odd){
+                        order: 2;
+                    }//odd 
+                }//div.col-10
+            }//odd services item
+            .services-item-content{
+                padding: 45px 30px 0 50px;
+                text-align: left;
+            }//services-item-content
+        }//services item
+    }//services section
+}
+
+
+//MD
+@media(min-width: 768px){
+
+    //services-single.html
+    .services-single{
+        padding: 130px 0;
+    }
+}
+
+
+//LG
+@media(min-width: 992px){
+
+    .services-section{
+        padding: 50px 0 55px;
+
+        &.services-page{
+            padding: 88px 0 37px;
+        }
+        .services-item{
+            .services-item-content{
+                padding: 40px 90px;
+            }//services-item-content
+        }//services item
+    }//services section
+
+    //services-single.html
+    .services-single{
+        padding: 170px 0 110px;
+    }
+}
+
+
+//XL
+@media(min-width: 1200px){
+
+    .services-section{
+        .services-item{
+            .services-item-content{
+                padding-top: 143px;
+                padding-left: 95px;
+            }//services content
+        }//services item
+    }//services section
+}
+
+//XXL
+@media(min-width: 1500px){
+
+}

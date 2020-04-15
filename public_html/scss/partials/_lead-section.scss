@@ -8,8 +8,8 @@
 
 .lead-section{
     padding: 30px 0;
-    background-size: 100% auto;
-    background-position: center top;
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -30,8 +30,6 @@
 
     .lead-section{
         padding: 50px 0;
-        background-size: cover;
-        background-position: center center;
     }
 }
 //MD
@@ -47,7 +45,8 @@
 @media(min-width: 992px){
 
     .lead-section{
-        padding: 129px 0;
+        background-size: 100% auto;
+        padding: 113px 0;
     }
 }
 
@@ -55,7 +54,8 @@
 @media(min-width: 1200px){
 
     .lead-section{
-        padding: 170px 0;
+        padding: 160px 0 200px;
+        background-size: cover;
     }
 }
 
@@ -63,7 +63,11 @@
 @media(min-width: 1500px){
 
     .lead-section{
-        padding: 285px;
+        padding: 218px 0 269px;
+
+        &.lead-services{
+            padding: 283px 0;
+        }
     }
 }
 

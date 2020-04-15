@@ -2,23 +2,25 @@
 $font-size-base:  1.6rem;
 $gray-900: #1E1E1E;
 $primary: #ECD9D9;
+$secondary: #F5F5F5;
 
 
 //Grid - container, breakpoints, gutter 
 $container-max-widths: (
-  //sm: 540px,//disabled
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
+//sm: 540px,//disabled
+md: 720px,
+lg: 960px,
+xl: 1140px
 ) !default;
 
 $grid-breakpoints: (
-  xs: 0,
-  xm: 450px, //new breakpoint
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
+xs: 0,
+xm: 450px, //new breakpoint
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1500px
 ) !default;
 
 $grid-gutter-width: 12px;
@@ -29,20 +31,20 @@ $spacer: 1rem !default;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
-  (
-    0: 0,
-    1: ($spacer * .5),
-    2: ($spacer),
-    3: ($spacer * 1.5),
-    4: ($spacer * 2),
-    5: ($spacer * 2.5),
-    6: ($spacer * 3),
-    7: ($spacer * 3.5),
-    8: ($spacer * 4),
-    9: ($spacer * 4.5),
-    10: ($spacer * 5)
-  ),
-  $spacers
+(
+0: 0,
+1: ($spacer * .5),
+2: ($spacer),
+3: ($spacer * 1.5),
+4: ($spacer * 2),
+5: ($spacer * 2.5),
+6: ($spacer * 3),
+7: ($spacer * 3.5),
+8: ($spacer * 4),
+9: ($spacer * 4.5),
+10: ($spacer * 5)
+),
+$spacers
 );
 
 
@@ -54,3 +56,4 @@ $link-hover-decoration: none;
 $navbar-light-color: $gray-900;
 $navbar-light-hover-color: $gray-900;
 $navbar-light-active-color: $gray-900;
+
