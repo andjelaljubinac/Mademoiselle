@@ -96,9 +96,9 @@ $blog-category-font-family: $bodoni;
     }//.blog-category-published
     .blog-single-header-title{
         font-family: $blog-single-title-font-tamily;
-        font-size: 4.4rem;
+        font-size: 2.2rem;
         letter-spacing: 0;
-        line-height: 5rem;
+        line-height: 3rem;
         font-weight: 400;
     }//.blog-single-header-title
 
@@ -163,6 +163,7 @@ $blog-category-font-family: $bodoni;
     //blog-single
     .blog-single-header{
         padding: 70px 0;
+
     }//.blog-single-header
 
 }
@@ -190,7 +191,13 @@ $blog-category-font-family: $bodoni;
     //blog-single
     .blog-single-header{
         padding: 95px 0;
+
+        .blog-single-header-title{
+            font-size: 4.4rem;
+            line-height: 5rem;
+        }
     }//blog single header
+
 
     .blog-single-content{
         padding-bottom: 185px;
